@@ -1,0 +1,7 @@
+body{
+    background-image:url('gif_de_gato_kawai.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 9px 100px;
+}
