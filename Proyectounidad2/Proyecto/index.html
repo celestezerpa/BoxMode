@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Para los iconos-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://deltanetsolutions.com/wp-content/uploads/2021/06/Cyberseguridad-2.png">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <title>Aenigma</title>
+
+  <!--Link para fuentes-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anonymous Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caladea">
+  <link href='https://fonts.googleapis.com/css?familyPro' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Vollkorn SC' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Vollkorn SC' rel='stylesheet'>
+  
+</head>
+
+<body>
+  <br>
+  <br>
+  <br>
+  <div class="inicio">
+    <!--Audio de fondo-->
+    
+    <audio controls="controls" autoplay="autoplay" loop="loop">
+      <source src="assets/audio/temperate.mp3" type="audio/mp3">
+    </audio>
+    
+  <!--Contenido-->
+    <h1 class="titulo"> 🌀AENIGMA🌌 </h1>
+    <br>
+    <center>
+      <h2 class="subtitulo">Word Mystery:
+        <br> Escribe aquí y descubre el misterio
+      </h2>
+      <br>
+      <br>
+      <div>
+        <input type="text" id="mensaje" placeholder="Ingrese texto a cifrar o descifrar" maxlength="600" oninput="contar() ">
+      </div>
+      <p class="cantidad" id="conteo">0/600</p>
+    </center>
+      <br>
+      <center><input type="button" value="PEGAR" onclick="pegar()" id="copipega">
+     
+          <br>
+          <br>
+
+          <h2 class="subtitulo2">Password secret:
+            <br>Coloque su contraseña
+          </h2>
+          <br><!--Enviar mensaje secreto a un amigo-->
+          <br>
+         <select id="select" name="D1" size="1">
+            <option selected="" value="0">A</option>
+            <option value="1">B</option>
+            <option value="2">C</option>
+            <option value="3">D</option>
+            <option value="4">E</option>
+            <option value="5">F</option>
+            <option value="6">G</option>
+            <option value="7">H</option>
+            <option value="8">I</option>
+            <option value="9">J</option>
+            <option value="10">K</option>
+            <option value="11">L</option>
+            <option value="12">M</option>
+            <option value="13">N</option>
+            <option value="14">O</option>
+            <option value="15">P</option>
+            <option value="16">Q</option>
+            <option value="17">R</option>
+            <option value="18">S</option>
+            <option value="19">T</option>
+            <option value="20">U</option>
+            <option value="21">V</option>
+            <option value="22">W</option>
+            <option value="23">X</option>
+            <option value="24">Y</option>
+            <option value="25">Z</option>
+          </select>
+          <select id="select" name="D2" size="1">
+            <option selected="" value="0">A</option>
+            <option value="1">B</option>
+            <option value="2">C</option>
+            <option value="3">D</option>
+            <option value="4">E</option>
+            <option value="5">F</option>
+            <option value="6">G</option>
+            <option value="7">H</option>
+            <option value="8">I</option>
+            <option value="9">J</option>
+            <option value="10">K</option>
+            <option value="11">L</option>
+            <option value="12">M</option>
+            <option value="13">N</option>
+            <option value="14">O</option>
+            <option value="15">P</option>
+            <option value="16">Q</option>
+            <option value="17">R</option>
+            <option value="18">S</option>
+            <option value="19">T</option>
+            <option value="20">U</option>
+            <option value="21">V</option>
+            <option value="22">W</option>
+            <option value="23">X</option>
+            <option value="24">Y</option>
+            <option value="25">Z</option>
+          </select>
+          <select id="select" name="D3" size="1">
+            <option selected="" value="0">A</option>
+            <option value="1">B</option>
+            <option value="2">C</option>
+            <option value="3">D</option>
+            <option value="4">E</option>
+            <option value="5">F</option>
+            <option value="6">G</option>
+            <option value="7">H</option>
+            <option value="8">I</option>
+            <option value="9">J</option>
+            <option value="10">K</option>
+            <option value="11">L</option>
+            <option value="12">M</option>
+            <option value="13">N</option>
+            <option value="14">O</option>
+            <option value="15">P</option>
+            <option value="16">Q</option>
+            <option value="17">R</option>
+            <option value="18">S</option>
+            <option value="19">T</option>
+            <option value="20">U</option>
+            <option value="21">V</option>
+            <option value="22">W</option>
+            <option value="23">X</option>
+            <option value="24">Y</option>
+            <option value="25">Z</option>
+          </select>
+           
+          <input id="select" type="number" placeholder="1">
+          <br>
+          <br>
+          <br>
+          <center><input type="button" value="CODIFICAR" onclick="calcular()" id="decocodi"/>
+          <input type="button" value="DECODIFICAR" onclick="calcular()" id="decocodi"/>
+          </center>
+          <br>
+          <br>
+          <br>
+          <input type="text" id="mensaje_codificado">
+          <br>
+          <br>
+          <input type="button" value="COPIAR" onclick="copiar()" id="copipega">
+          <span id="error"></span>
+
+          <script src="assets/js/script.js"></script>
+          <script src="assets/js/decocodi.js"></script>
+          <br>
+          <br>
+          <br>
+          <br>
+       <footer>
+            <h3>
+              <p style="color:white">Copyright © 2023 - Entidad:"Mary Lee Woods "- Todos los derechos reservados</p>
+            </h3>
+      </footer>
+   </body>  
+</html>
